@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<main class="splitter">
+    <h1 class="splitter__title">spli <br> tter</h1>
+    <section class="splitter__section-wrapper">
+        <div class="splitter__inputs">
+            <div class="splitter__bill-wrapper">
+                <label class="splitter__bill" for="bill">Bill</label>
+                <input type="text" id="bill" placeholder="0" inputmode="numeric">
+                <span aria-live="polite" class="splitter__error"></span>
+            </div>
+            <div class="splitter__tip-wrapper">
+                <fieldset class="splitter__tip">
+                    <legend>Select Tip %</legend>
+                    <button type="button">5%</button>
+                    <button type="button">10%</button>
+                    <button type="button">15%</button>
+                    <button type="button">25%</button>
+                    <button type="button">50%</button>
+                    <div>
+                        <input type="text" aria-label="Custom % of tip" placeholder="Custom" inputmode="numeric">
+                        <span aria-live="polite" class="splitter__error"></span>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="splitter__people-wrapper">
+                <label class="splitter__people" for="people">Number of People</label>
+                <input type="text" id="people" placeholder="0" inputmode="numeric">
+                <span aria-live="polite" class="splitter__error"></span>
+            </div>
+        </div>
+        <div class="splitter__output">
+            <div class="splitter__tip-amount">
+                <h2>Tip Amount <br> <span>/ person</span></h2>
+                <p>$0.00</p>
+            </div>
+            <div class="splitter__total">
+                <h2>Total <br> <span>/ person</span></h2>
+                <p>$0.00</p>
+            </div>
+            <button type="button" disabled>Reset</button>
+        </div>
+    </section>
+</main>
+</body>
+</html>
