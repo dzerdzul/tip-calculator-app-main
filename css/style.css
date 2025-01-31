@@ -70,6 +70,10 @@ label, legend {
   color: var(--Very-dark-cyan);
 }
 
+.splitter {
+  padding: 0 5px;
+}
+
 .splitter__error {
   color: var(--Outline);
   font-size: 12px;
@@ -102,6 +106,11 @@ label, legend {
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 905px) {
+  .splitter__section-wrapper {
+    padding: 32px;
+  }
 }
 
 .splitter__inputs {
